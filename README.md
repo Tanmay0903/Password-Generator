@@ -59,6 +59,9 @@ JavaScript
     Randomly selects characters from specified sets to generate a password.
     Displays the generated password in the designated output area.
 
+**Installation**
+
+There's no installation necessary for this web-based tool. Simply download or clone the repository and open main.html in a web browser.
 
 **Contribution**
 
