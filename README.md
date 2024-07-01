@@ -63,3 +63,7 @@ JavaScript
 **Contribution**
 
 Contributions and improvements to this project are welcome. Feel free to fork the repository, make changes, and submit pull requests.
+
+**License**
+
+This project is licensed under the MIT License - see the LICENSE file for details.
