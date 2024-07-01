@@ -38,6 +38,7 @@ To run this project, you only need a web browser. No additional software or depe
 **Code Description**
 
 HTML
+   
     The HTML structure is defined in main.html. It includes:
     A container for the password generator interface.
     Input fields for password length and character options.
@@ -45,12 +46,14 @@ HTML
     An output section to display the generated password.
 
 CSS
+    
     The CSS styles, embedded in the <style> tag, provide the following:
     Centered container with a shadow and rounded corners.
     Styled buttons with gradients and transitions.
     Readable text styling and responsive design elements.
 
 JavaScript
+   
     The JavaScript code handles password generation:
     Captures user input for password length and character types.
     Randomly selects characters from specified sets to generate a password.
