@@ -1,4 +1,4 @@
-****Password Generator
+Password Generator
 Overview
 
 The Password Generator is a simple yet effective web application designed to help users create secure and random passwords. Users can customize the length of the password and choose to include letters, numbers, and special characters. This tool is perfect for generating strong passwords for various applications and online accounts.
@@ -55,5 +55,5 @@ JavaScript
 The JavaScript code handles password generation:
     Captures user input for password length and character types.
     Randomly selects characters from specified sets to generate a password.
-    Displays the generated password in the designated output are
-****
+    Displays the generated password in the designated output area.
+
