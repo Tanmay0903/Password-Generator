@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to top, rgb(120, 199, 255) 0%, #a1c8c8 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Montserrat", Arial, sans-serif;
+        }
+        button {
+            border: 0;
+            outline: 0;
+        }
+        .container {
+            margin: 40px 0;
+            width: 400px;
+            height: auto;
+            padding: 20px 25px;
+            background: #0a0e31;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            color: #fff;
+        }
+        .container h1 {
+            font-size: 1.75rem;
+            margin: 10px -5px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .settings label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .settings input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .checkboxes label {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .checkboxes input {
+            margin-right: 10px;
+        }
+        .btn.generate {
+            user-select: none;
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            border-radius: 8px;
+            color: #fff;
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            letter-spacing: 1px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 150ms ease;
+        }
+        .btn.generate:hover {
+            background-image: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        .btn.generate:active {
+            transform: translateY(-3%);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.08);
+        }
+        .output h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            color: #fff;
+        }
+        #password {
+            margin-top: 10px;
+            padding: 15px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            word-break: break-all;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="settings">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="6" max="32" value="12">
+            <div class="checkboxes">
+                <label><input type="checkbox" id="letters" checked> Include Letters</label>
+                <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
+                <label><input type="checkbox" id="special" checked> Include Special Characters</label>
+            </div>
+            <button class="btn generate" onclick="generatePassword()">Generate Password</button>
+        </div>
+        <div class="output">
+            <h2>Generated Password:</h2>
+            <div id="password"></div>
+        </div>
+    </div>
+
+    <script>
+        function generatePassword() {
+            const length = document.getElementById('length').value;
+            const includeLetters = document.getElementById('letters').checked;
+            const includeNumbers = document.getElementById('numbers').checked;
+            const includeSpecial = document.getElementById('special').checked;
+
+            if (!includeLetters && !includeNumbers && !includeSpecial) {
+                alert('At least one character type must be included');
+                return;
+            }
+
+            const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const numbers = '0123456789';
+            const specialChars = '!@#$%^&*()_+[]{}|;:,.<>?';
+
+            let allChars = '';
+            if (includeLetters) allChars += letters;
+            if (includeNumbers) allChars += numbers;
+            if (includeSpecial) allChars += specialChars;
+
+            let password = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * allChars.length);
+                password += allChars[randomIndex];
+            }
+
+            document.getElementById('password').textContent = password;
+        }
+    </script>
+</body>
+</html>
