@@ -1,4 +1,5 @@
 **Password Generator**
+
 Overview
 
 The Password Generator is a simple yet effective web application designed to help users create secure and random passwords. Users can customize the length of the password and choose to include letters, numbers, and special characters. This tool is perfect for generating strong passwords for various applications and online accounts.
@@ -35,24 +36,22 @@ To run this project, you only need a web browser. No additional software or depe
     Copy Password: The generated password will be displayed and can be copied for use.
 
 **Code Description**
-HTML
 
-The HTML structure is defined in main.html. It includes:
+HTML
+    The HTML structure is defined in main.html. It includes:
     A container for the password generator interface.
     Input fields for password length and character options.
     A button to trigger password generation.
     An output section to display the generated password.
 
 CSS
-
-The CSS styles, embedded in the <style> tag, provide the following:
+    The CSS styles, embedded in the <style> tag, provide the following:
     Centered container with a shadow and rounded corners.
     Styled buttons with gradients and transitions.
     Readable text styling and responsive design elements.
 
 JavaScript
-
-The JavaScript code handles password generation:
+    The JavaScript code handles password generation:
     Captures user input for password length and character types.
     Randomly selects characters from specified sets to generate a password.
     Displays the generated password in the designated output area.
