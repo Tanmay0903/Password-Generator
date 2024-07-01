@@ -1,10 +1,9 @@
-Password Generator
+****Password Generator
 Overview
 
 The Password Generator is a simple yet effective web application designed to help users create secure and random passwords. Users can customize the length of the password and choose to include letters, numbers, and special characters. This tool is perfect for generating strong passwords for various applications and online accounts.
 
 Features
-
     Customizable Length: Specify the password length between 6 and 32 characters.
     Character Type Options: Choose to include letters, numbers, and special characters.
     User-Friendly Interface: Simple and responsive design for ease of use on any device.
@@ -12,7 +11,7 @@ Features
 
 Table of Contents
 
-    Overview
+   Overview
     Features
     Getting Started
         Prerequisites
@@ -28,7 +27,6 @@ Prerequisites
 To run this project, you only need a web browser. No additional software or dependencies are required.
 
 Usage
-
     Open the Application: Open the main.html file in your preferred web browser.
     Set Preferences:
         Enter the desired password length in the input field (between 6 and 32 characters).
@@ -40,7 +38,6 @@ Code Description
 HTML
 
 The HTML structure is defined in main.html. It includes:
-
     A container for the password generator interface.
     Input fields for password length and character options.
     A button to trigger password generation.
@@ -49,7 +46,6 @@ The HTML structure is defined in main.html. It includes:
 CSS
 
 The CSS styles, embedded in the <style> tag, provide the following:
-
     Centered container with a shadow and rounded corners.
     Styled buttons with gradients and transitions.
     Readable text styling and responsive design elements.
@@ -57,7 +53,7 @@ The CSS styles, embedded in the <style> tag, provide the following:
 JavaScript
 
 The JavaScript code handles password generation:
-
     Captures user input for password length and character types.
     Randomly selects characters from specified sets to generate a password.
     Displays the generated password in the designated output are
+****
