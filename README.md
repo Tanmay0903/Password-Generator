@@ -1,15 +1,15 @@
-Password Generator
+**Password Generator**
 Overview
 
 The Password Generator is a simple yet effective web application designed to help users create secure and random passwords. Users can customize the length of the password and choose to include letters, numbers, and special characters. This tool is perfect for generating strong passwords for various applications and online accounts.
 
-Features
+**Features**
     Customizable Length: Specify the password length between 6 and 32 characters.
     Character Type Options: Choose to include letters, numbers, and special characters.
     User-Friendly Interface: Simple and responsive design for ease of use on any device.
     Instant Password Generation: Generate a new password instantly with one click.
 
-Table of Contents
+**Table of Contents**
 
    Overview
     Features
@@ -21,12 +21,12 @@ Table of Contents
     Contributing
     License
 
-Getting Started
-Prerequisites
+**Getting Started**
+**Prerequisites**
 
 To run this project, you only need a web browser. No additional software or dependencies are required.
 
-Usage
+**Usage**
     Open the Application: Open the main.html file in your preferred web browser.
     Set Preferences:
         Enter the desired password length in the input field (between 6 and 32 characters).
@@ -34,7 +34,7 @@ Usage
     Generate Password: Click the "Generate Password" button to create a new password.
     Copy Password: The generated password will be displayed and can be copied for use.
 
-Code Description
+**Code Description**
 HTML
 
 The HTML structure is defined in main.html. It includes:
